@@ -1,12 +1,19 @@
-*{
+*,
+html{
     padding: 0%;
     margin: 0%;
 body{
-    background-color: white;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(235, 231, 231);
     text-rendering: optimizeLegibility;
     font-size: 16px;
     font-family: sans-serif;
     font-weight: 300;
+.row,
+.col{
+    padding: 0%;
+    margin: 0%;
 header{
     background-image:linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url('./images/laptop.jpg');
     width: 100%;
@@ -19,6 +26,7 @@ header{
 }
     .navv{
         width: 100%;
+        height: 70px;
         .logo{
             width: auto;
             height: 120px;
@@ -27,16 +35,17 @@ header{
         .main-nav{
             list-style: none;
             float: right;
-            margin-top: 50px;
         .main-nav, li{
             display: inline-block;
-            margin-right: 40px;
+            margin-right:25px;
+            margin-top: 5%;
             text-transform: uppercase;
         .main-nav, li, a{
             text-decoration: none;
             color:white;
             }
           } 
+        }
         }
     }
     .main-nav li a:hover{
@@ -71,33 +80,165 @@ header{
 }
 .btn:hover{
     background-color:#cc0022 ;
+        }
+      }
+    }
+  } 
 }
+
+// for mystory
+.row,
+.col{
+    margin: 0%;
+    padding: 0%;
+.hen{
+    background-image:linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url('./images/laptop.jpg');
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
 }
+.txts{
+    margin-bottom: 100px;
+    h1{
+        font-size: 400%;
+        color: white;
+        font-weight: 300;
+    }
+    h2{
+        font-size: 200%;
+        color: white;
+        font-weight: 300;
+    }
 }
-} 
+.projects{
+    width: 100%;
+    margin-top: 5%;
+.row2{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    display: flex !important;
+    justify-content: space-between;
+.box{
+    img{
+        border-radius: 10px;
+        width: 80%;
+        height: 300px;
+        margin-top: 10%;
+    }
 }
-// @media (max-width:600px){
-// //    .main-nav{
-// //        display: none !important;
-// //    } 
-//    header{
-//     background-image:linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url('./images/laptop.jpg');
-//     width: 100%;
-//     height: 100vh;
-//     background-size: cover;
-//     background-position: center;
-//     position: relative;
-//    .btn-light{
-//         display: inherit !important;
-//     }
-//     .navv{
-//         width: 100%;
-//         .logo{
-//             width: 1%;
-//             height: 120px;
-//             float: left;
-//         }
-//     }    
-//    }
+.btn{
+    padding: 10px 30px;
+    border:2px solid #8f0029;
+    border-radius: 200px;
+    color: #8f0029;
+    margin-left: 40%;
+}
+.btn:hover{
+    background-color: #cc0022;
+    color: white;
+}
+h2{
+    text-align: center;
+    font-size: 200%;
+    font-weight: 300;
+    margin-bottom: 3%;
+    color: #8f0029;
+}
+p{
+    font-size: 100%;
+    font-weight: 300; 
+    color: grey;
+}
+.box:first-child{
+    text-align: left;
+    padding: 0 5%;
+}
+.box:last-child{
+    text-align: right;
+    }
+  }
+}
+ }
+
+// for contact
+.row,
+.col{
+    padding: 0%;
+    margin: 0%;
+.round{
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    display:inline-block;
+    justify-content: center;
+    i{
+        font-size: 150%;
+        color: #8f0029;
+    }
+}
+.round:hover{
+    background-color: #ff80a4;
+}
+    i:hover{
+        color:white;
+    }
+}
+ 
+@media (max-width: 576px) {
+.main-nav li{
+    margin-top: 5%;
+}
+.txt,
+.txts{
+    min-width: 100%;
    
-// }
+    // flex-wrap: wrap !important;
+    h1{
+        font-weight: 200;
+        font-size: 200% !important;
+    }
+    h2{
+        font-size: 100% !important;
+        font-weight: 100;
+        line-height: 150%;
+    }
+}
+    h3{
+        font-size: 100%;
+        font-weight: 100;
+    }
+}
+.projects{
+    .row2{
+        display: block !important;
+        padding: 2% !important;
+    }
+    .btn{
+        margin-left: 30% !important;
+        padding: 5px 15px !important;
+        margin-top: 5% !important;
+        margin-bottom: 10% !important;
+    }
+    .bttn{
+        margin-right: 20% !important;
+    }
+    .texts{
+        text-align: left;
+        min-width: 100;
+        margin-left:-2% ;
+    }
+    .box{
+        margin-bottom: 2%;
+        img{
+            min-width: 100% !important;
+            flex-wrap: wrap !important;
+        }
+    }
+}
+
+
+
