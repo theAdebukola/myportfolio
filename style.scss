@@ -92,9 +92,9 @@ header{
     margin: 0%;
     padding: 0%;
 .hen{
-    background-image:linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url('./images/laptop.jpg');
+    background-image:linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url('./images/ladyfinger.jpg');
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     position: relative; 
@@ -168,6 +168,14 @@ p{
 .col{
     padding: 0%;
     margin: 0%;
+    .cont{
+        background-image:linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url('./images/roughsmile.jpg');
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        position: relative; 
+    }
 .round{
     border-radius: 100%;
     height: 40px;
@@ -187,7 +195,20 @@ p{
         color:white;
     }
 }
- 
+ // for about
+ .row,
+ .col-sm{
+     padding: 0%;
+     margin: 0%;
+ .abou{
+    background-image:linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url('./images/standing.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+}
+ }
 @media (max-width: 576px) {
 .main-nav li{
     margin-top: 5%;
@@ -195,6 +216,9 @@ p{
 .txt,
 .txts{
     min-width: 100%;
+    .big{
+        font-size: 150% !important;
+}
    
     // flex-wrap: wrap !important;
     h1{
@@ -239,6 +263,6 @@ p{
         }
     }
 }
-
-
-
+.smal{
+    margin-bottom: 10%;
+}

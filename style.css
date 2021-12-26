@@ -155,9 +155,9 @@ html body .col .arr .btn:hover {
 }
 .row .hen,
 .col .hen {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./images/laptop.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./images/ladyfinger.jpg");
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -240,6 +240,15 @@ html body .col .arr .btn:hover {
   padding: 0%;
   margin: 0%;
 }
+.row .cont,
+.col .cont {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./images/roughsmile.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
 .row .round,
 .col .round {
   border-radius: 100%;
@@ -263,6 +272,21 @@ html body .col .arr .btn:hover {
   color: white;
 }
 
+.row,
+.col-sm {
+  padding: 0%;
+  margin: 0%;
+}
+.row .abou,
+.col-sm .abou {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./images/standing.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
 @media (max-width: 576px) {
   .main-nav li {
     margin-top: 5%;
@@ -271,6 +295,10 @@ html body .col .arr .btn:hover {
   .txt,
 .txts {
     min-width: 100%;
+  }
+  .txt .big,
+.txts .big {
+    font-size: 150% !important;
   }
   .txt h1,
 .txts h1 {
@@ -313,6 +341,10 @@ html body .col .arr .btn:hover {
 .projects .box img {
   min-width: 100% !important;
   flex-wrap: wrap !important;
+}
+
+.smal {
+  margin-bottom: 10%;
 }
 
 /*# sourceMappingURL=style.css.map */
